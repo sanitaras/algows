@@ -86,4 +86,15 @@ Date: Tue, 29 Jan 2019 16:16:14 GMT
 Content-Length: 15
 
 not an integer
+
+PS C:\curl> .\curl.exe -si -X GET http://localhost:9000/fib/55.00
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Tue, 29 Jan 2019 16:20:37 GMT
+Content-Length: 15
+
+not an integer
+
 </pre>
+
+
