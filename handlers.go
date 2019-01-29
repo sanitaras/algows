@@ -70,12 +70,11 @@ func getFibs(n int) []int {
 
 func getHandler(w http.ResponseWriter, r *http.Request) {
 
+	if r.Method == "GET" {
 
-		if r.Method == "GET" {
+	        fibnum := strings.TrimPrefix(r.URL.Path, "/fib/")
 
-		    fibnum := strings.TrimPrefix(r.URL.Path, "/fib/")
-
-		    switch r.URL.Path {
+	  switch r.URL.Path {
 
           case "/fib/":
 
@@ -84,9 +83,9 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
                 w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
 
-    			case "/fib/"+fibnum:
+    	  case "/fib/"+fibnum:
 								
-      					fmt.Printf("got - %s. \n", fibnum)
+      		fmt.Printf("got - %s. \n", fibnum)
 
                 if i, err := strconv.Atoi(fibnum) 
 
