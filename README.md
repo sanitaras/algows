@@ -1,7 +1,7 @@
 # algows
 algorithms RESTful service
 
-# Deploy on Windows
+### Deploy on Windows
 1. Install Git
 2. Install GO
 3. Configure GO Work-space and GOPATH env
@@ -12,10 +12,10 @@ algorithms RESTful service
 4. From powershell console go to `C:\Projects\Go` folder and run: `go get https://github.com/sanitaras/algows`
 5. To start algows run: `bin\algows`
 
-# Deploy on Linux
+### Deploy on Linux
 1. Same procedure as Windows, just in Linux environment.
 
-# Usage
+### Usage
 1. After start of algows go to browser and open: http://localhost:9000
 2. You should see the following output below.
 
@@ -29,7 +29,7 @@ Services not implemented yet:
     -algorithm3 e.g. http://localhost:9000/alg3
 </pre>
 
-# Testing with CURL
+### Testing with CURL
 <pre>
 PS C:\curl> .\curl.exe -si -X GET http://localhost:9000
 HTTP/1.1 200 OK
