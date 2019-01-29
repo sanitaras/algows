@@ -18,12 +18,12 @@ algorithms RESTful service
 # Usage
 1. After start of algows go to browser and open: http://localhost:9000
 2. You should see the following output below.
-`
-Welcome to algorithms RESTful service.
- Services available: 
- - Fibonacci Sequence e.g. http://localhost:9000/fib 
- Services not implemented yet:
- - algorithm1 e.g. http://localhost:9000/alg1 
- - algorithm2 e.g. http://localhost:9000/alg2 
- - algorithm3 e.g. http://localhost:9000/alg3 
- `
+
+> Welcome to algorithms RESTful service.
+> Services available: 
+> - Fibonacci Sequence e.g. http://localhost:9000/fib 
+> Services not implemented yet:
+> - algorithm1 e.g. http://localhost:9000/alg1 
+> - algorithm2 e.g. http://localhost:9000/alg2 
+> - algorithm3 e.g. http://localhost:9000/alg3 
+
