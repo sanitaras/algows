@@ -26,3 +26,4 @@ Welcome to algorithms RESTful service.
  - algorithm1 e.g. http://localhost:9000/alg1 
  - algorithm2 e.g. http://localhost:9000/alg2 
  - algorithm3 e.g. http://localhost:9000/alg3 
+ 
