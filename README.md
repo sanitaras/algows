@@ -9,7 +9,7 @@ algorithms RESTful service
   - Set GOPATH Environment Variable pointing to `C:\Projects\Go` (Control Panel -> Environmental Variables)
   - Verify GOPATH from powershell run: `[Environment]::GetEnvironmentVariable("GOPATH","User")`
   - Verify GOPATH from cmd run: `echo %GOPATH%`
-4. From powershell console go to `C:\Projects\Go` folder and run: `go get https://github.com/sanitaras/algows`
+4. From powershell console go to `C:\Projects\Go` folder and run: `go get github.com/sanitaras/algows`
 5. To start algows run: `bin\algows`
 
 ### Deploy on Linux
