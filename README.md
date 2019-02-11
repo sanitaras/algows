@@ -163,6 +163,30 @@ networks:
   webnet:
 </pre>
 
+### Validating docker-compose.yml config
+
+<pre>
+ekar@docker1:~$ docker-compose config
+WARNING: Some services (web) use the 'deploy' key, which will be ignored. Compose does not support 'deploy' configuration - use `docker stack deploy` to deploy to a swarm.
+networks:
+  webnet: {}
+services:
+  web:
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.1'
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    image: sanitaras/algows:v1.0.0
+    networks:
+      webnet: null
+    ports:
+    - 80:9000/tcp
+version: '3.0'
+</pre>
 
 ### Run scalable service with load-balance (DNS round-robin)
 
