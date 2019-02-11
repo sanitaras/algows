@@ -1,6 +1,13 @@
 # algows
 algorithms RESTful service
 
+  * [Deploy on Windows](#deploy-on-windows)
+  	* [Usage](#usage)
+  	* [Testing with CURL](#testing-with-curl)
+  * [Deploy on Linux](#deploy-on-linux)
+  * [Docker deploy algows as a service](#docker-deploy-algows-as-a-service)
+
+
 ### Deploy on Windows
 1. Install Git
 2. Install GO
@@ -97,7 +104,7 @@ not an integer
 
 </pre>
 
-## Docker: deploy algows as a service
+## Docker deploy algows as a service
 
 Algows is available at Docker HUB.
 
