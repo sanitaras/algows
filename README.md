@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/sanitaras/algows)](https://goreportcard.com/report/github.com/sanitaras/algows)
+
 # algows
 algorithms RESTful service
 
