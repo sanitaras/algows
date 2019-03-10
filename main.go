@@ -21,8 +21,8 @@ func main() {
 	z15 := reflect.DeepEqual(a15, b15)
 
 	if z5 && z10 && z15 {
-		fmt.Println("Test Fibonacci Sequence: PASS\n")
-		fmt.Println("Starting algorithms RESTful service.\n")
+		fmt.Println("Test Fibonacci Sequence: PASS")
+		fmt.Println("Starting algorithms RESTful service.")
 		http.HandleFunc("/", getHandler)
 		http.HandleFunc("/fib/", getHandler)
 		http.HandleFunc("/alg1/", getHandler)
@@ -32,7 +32,7 @@ func main() {
 
 	} else {
 
-		fmt.Println("Test Fibonacci Sequence: FAIL\n")
+		fmt.Println("Test Fibonacci Sequence: FAIL")
 
 	}
 }

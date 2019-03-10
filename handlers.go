@@ -80,9 +80,11 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 
 			fmt.Fprintln(w, "Hostname:", hname)
 
-			fmt.Fprintln(w, "\n")
+			//fmt.Fprintln(w, "\n")
 
-			fmt.Fprintln(w, "Welcome to Fibonacci Sequence RESTful service.\n - Usage e.g. /fib/5 \n")
+			fmt.Fprintln(w, "Welcome to Fibonacci Sequence RESTful service.")
+
+			fmt.Fprintln(w, "- Usage e.g. /fib/5")
 
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
@@ -139,23 +141,28 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 
 		case "/alg1/":
 
-			fmt.Fprintln(w, "Welcome to algorithm1 RESTful service.\n Not implemented yet! \n")
+			fmt.Fprintln(w, "Welcome to algorithm1 RESTful service.")
+			
+			fmt.Fprintln(w, "Not implemented yet!")
 
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
 		case "/alg2/":
 
-			fmt.Fprintln(w, "Welcome to algorithm2 RESTful service.\n Not implemented yet! \n")
+			fmt.Fprintln(w, "Welcome to algorithm2 RESTful service.")
+
+			fmt.Fprintln(w, "Not implemented yet!")
 
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
 		case "/alg3/":
 
-			fmt.Fprintln(w, "Welcome to algorithm3 RESTful service.\n Not implemented yet! \n")
+			fmt.Fprintln(w, "Welcome to algorithm3 RESTful service.")
+
+			fmt.Fprintln(w, "Not implemented yet!")
 
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
-			//case "/":
 		default:
 
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
@@ -167,11 +174,13 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 			}
 
 			fmt.Fprintln(w, "Hostname:", hname)
-
-			fmt.Fprintln(w, "\n")
-
-			fmt.Fprintln(w, "Welcome to algorithms RESTful service.\n Services available: \n - Fibonacci Sequence e.g. /fib \n Services not implemented yet:\n - algorithm1 e.g. /alg1 \n - algorithm2 e.g. /alg2 \n - algorithm3 e.g. /alg3 \n")
-
+			fmt.Fprintln(w, "Welcome to algorithms RESTful service.")
+			fmt.Fprintln(w, "Services available:")
+			fmt.Fprintln(w, "- Fibonacci Sequence e.g. /fib")
+			fmt.Fprintln(w, "Services not implemented yet:")
+			fmt.Fprintln(w, "- algorithm1 e.g. /alg1")
+			fmt.Fprintln(w, "- algorithm2 e.g. /alg2")
+			fmt.Fprintln(w, "- algorithm3 e.g. /alg3")
 		}
 
 	} else {
