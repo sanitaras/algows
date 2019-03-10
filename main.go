@@ -22,17 +22,14 @@ func main() {
 
 	if z5 && z10 && z15 {
 		fmt.Println("Test Fibonacci Sequence: PASS")
-		fmt.Println("Starting algorithms RESTful service.")
 		http.HandleFunc("/", getHandler)
 		http.HandleFunc("/fib/", getHandler)
 		http.HandleFunc("/alg1/", getHandler)
 		http.HandleFunc("/alg2/", getHandler)
 		http.HandleFunc("/alg3/", getHandler)
+		fmt.Println("Algorithms RESTful service started.")
 		http.ListenAndServe(":9000", Log(http.DefaultServeMux))
-
 	} else {
-
 		fmt.Println("Test Fibonacci Sequence: FAIL")
-
 	}
 }

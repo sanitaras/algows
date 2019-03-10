@@ -79,32 +79,26 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 			}
 
 			fmt.Fprintln(w, "Hostname:", hname)
-
-			//fmt.Fprintln(w, "\n")
-
 			fmt.Fprintln(w, "Welcome to Fibonacci Sequence RESTful service.")
-
 			fmt.Fprintln(w, "- Usage e.g. /fib/5")
-
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 
 		case "/fib/" + fibnum:
 
-			fmt.Printf("got - %s. \n", fibnum)
+			//fmt.Printf("got - %s. \n", fibnum)
 
 			if i, err := strconv.Atoi(fibnum); err == nil {
 
-				fmt.Printf("%s is an integer.\n", i)
+				//fmt.Printf("%s is an integer.\n", i)
 
 				if i < 0 {
 
-					fmt.Printf("%s is a negative integer.", i)
-
+					fmt.Printf("%d is a negative integer.", i)
 					fmt.Fprintln(w, "negative integer: ", i)
 
 				} else if i > 0 {
 
-					fmt.Printf(" %s is a positive integer.", i)
+					fmt.Printf(" %d is a positive integer.", i)
 
 					c := getFibs(i)
 
@@ -123,45 +117,36 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 				} else {
 
 					w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-
-					fmt.Printf("%s is Zero.", i)
-					fmt.Fprintln(w, "value is Zero: ", i)
+					fmt.Printf("%d is Zero.", i)
+					fmt.Fprintln(w, "value is zero: ", i)
 
 				}
 
 			} else {
 
 				w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-
-				fmt.Printf("%s is not an integer.\n", i)
-
+				fmt.Printf("is not an integer.")
 				fmt.Fprintln(w, "not an integer")
 
 			}
 
 		case "/alg1/":
 
-			fmt.Fprintln(w, "Welcome to algorithm1 RESTful service.")
-			
-			fmt.Fprintln(w, "Not implemented yet!")
-
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+			fmt.Fprintln(w, "Welcome to algorithm1 RESTful service.")
+			fmt.Fprintln(w, "Not implemented yet!")
 
 		case "/alg2/":
 
-			fmt.Fprintln(w, "Welcome to algorithm2 RESTful service.")
-
-			fmt.Fprintln(w, "Not implemented yet!")
-
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+			fmt.Fprintln(w, "Welcome to algorithm2 RESTful service.")
+			fmt.Fprintln(w, "Not implemented yet!")
 
 		case "/alg3/":
 
-			fmt.Fprintln(w, "Welcome to algorithm3 RESTful service.")
-
-			fmt.Fprintln(w, "Not implemented yet!")
-
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+			fmt.Fprintln(w, "Welcome to algorithm3 RESTful service.")
+			fmt.Fprintln(w, "Not implemented yet!")
 
 		default:
 
