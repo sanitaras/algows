@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/sanitaras/algows)](https://goreportcard.com/report/github.com/sanitaras/algows)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sanitaras/algows)](https://goreportcard.com/report/github.com/sanitaras/algows) [![Build Status](https://travis-ci.com/sanitaras/algows.svg?branch=master)](https://travis-ci.com/sanitaras/algows)
 
 # algows
 algorithms RESTful service
