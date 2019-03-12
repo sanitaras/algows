@@ -9,6 +9,9 @@ go:
   - "1.11"
   - tip
 
+install:
+  - go get -u github.com/golang/x/lint/golint
+
 script:
   - ./.travis.gofmt.sh
   - ./.travis.govet.sh
